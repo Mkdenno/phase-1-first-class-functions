@@ -1,12 +1,4 @@
-//  function receivesAFunction(callback){
-//      callback();
-//  }
-// function returnsANamedFunction(){
 
-// }
-// function returnsAnAnonymousFunction(){
-
-// }
 function receivesAFunction(callback) {
     callback()
 }
