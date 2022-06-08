@@ -1,16 +1,12 @@
-
 function receivesAFunction(callback){
-    return callback()
+    return callback(); 
 }
 function returnsANamedFunction(){
     return function hello(){
-    }
- 
-}
 
+    }}
 function returnsAnAnonymousFunction(){
-    return function (){
-        return "new label"
+        return function(){
+            return "new label"
+        }
     }
-
-}
