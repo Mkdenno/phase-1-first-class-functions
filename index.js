@@ -2,12 +2,12 @@
 function receivesAFunction(callback) {
     callback()
 }
-function sayHi() {
-    return `say hi`;
+function hello() {
+    return ` hello`;
 }
 
 function returnsANamedFunction() {
-    return sayHi;
+    return hello;
 }
 
 function returnsAnAnonymousFunction() {
