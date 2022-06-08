@@ -1,18 +1,20 @@
+const { returns } = require("chai-spies")
 
-function receivesAFunction(callback) {
-    callback()
+function receivesAFunction(callback){
+    return callback()
 }
-function hello() {
-    return ` hello`;
-}
+receivesAFunction(() => 'new order')
 
-function returnsANamedFunction() {
-    return hello;
-}
-
-function returnsAnAnonymousFunction() {
-    return function () {
-        return "hello everyone";
+function returnsANamedFunction(){
+    return function neverQuit(){
+        console.log("Quitting is not an option")
     }
+ 
 }
 
+function returnsAnAnonymousFunction(){
+    return function (){
+        return "new label"
+    }
+
+}
