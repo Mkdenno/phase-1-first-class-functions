@@ -1,13 +1,12 @@
-const { returns } = require("chai-spies")
 
 function receivesAFunction(callback){
     return callback()
 }
-receivesAFunction(() => 'new order')
-
+ function hello(){
+     return hello;
+ }
 function returnsANamedFunction(){
-    return function neverQuit(){
-        console.log("Quitting is not an option")
+    return function hello(){
     }
  
 }
